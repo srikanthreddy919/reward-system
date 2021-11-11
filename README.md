@@ -4,6 +4,10 @@ This application for calculating rewards based on recommendations of customers. 
 
 I have created a service for to calculate rewards > app/services/rewards. I created simple tree, where each node knowns about parent node, then, when we have any updates(like accept invite) we just update parent node, and lookup into 3 levels (1 point, 0.5 points, 0.25 points). To validate input from raw data i have created validator service > services/rewards/validators .
 
+## App hosted in heroku
+
+`http://reward-system-rails.herokuapp.com`
+
 ## System Requirements
 
 ```
@@ -22,7 +26,6 @@ bundle install
 ```
 rails s
 ```
-
 # To test the app
 
 - `open app in http://localhost:3000/`
