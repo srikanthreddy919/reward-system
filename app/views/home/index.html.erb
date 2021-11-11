@@ -1,0 +1,14 @@
+<div class="container my-5 bg-light py-4" data-controller="rewards">
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <h4 class="text-center mb-4">Rewards Calculator</h4>
+      <%= form_with(local: true) do |f| %>
+        <div class="mb-3">
+          <label for="rewards-file" class="form-label">Select Source File</label>
+          <%= f.file_field :rewards_source, class: 'form-control', id: "rewards-file", "data-rewards-target": "rewardSource", "data-action": "change->rewards#calculate", accept: '.txt' %>
+        </div>
+      <% end %>
+      <div data-rewards-target="errors"></div>
+      <code data-rewards-target="result"></code>
+    </div>
+  </div>
