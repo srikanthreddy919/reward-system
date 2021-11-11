@@ -6,7 +6,7 @@ I have created a service for to calculate rewards > app/services/rewards. I crea
 
 ## App hosted in heroku
 
-`http://reward-system-rails.herokuapp.com`
+`https://reward-system-rails.herokuapp.com`
 
 ## System Requirements
 
